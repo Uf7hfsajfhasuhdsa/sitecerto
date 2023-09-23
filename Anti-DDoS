@@ -1,0 +1,49 @@
+# Código Anti-DDoS desenvolvido por ?.
+
+#Anti - PHP Injection
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1 [QSA,L]
+
+# Anti - Layer 7
+[mysqld]
+max_allowed_packet=1M 
+SET GLOBAL max_allowed_packet=1000
+mysqld_safe = 1000
+echo $maxp[ 0 ];
+
+# Anti - UDP Attack
+max_allowed_packet=65M 
+SET GLOBAL max_allowed_packet=65535
+mysqld_safe = 1
+echo $maxp[ 1 ];
+
+# Anti - Syn Flood Attack
+max_allowed_packet=3M 
+SET GLOBAL max_allowed_packet=3500
+mysqld_safe = 1
+echo $maxp[ 0 ];
+
+# Anti - Layer 3 Attack
+max_allowed_packet=1M 
+SET GLOBAL max_allowed_packet=1
+mysqld_safe = 0
+echo $maxp[ 2 ];
+
+# Anti - Layer 4 Attack
+max_allowed_packet=1
+SET GLOBAL max_allowed_packet=1
+mysqld_safe = 1
+echo $maxp[ 1 ];
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+body {
+	background: url('images/e.png') repeat;
+	font-family: arial black, sans-serif;
+	font-size: 11px;
+	margin: 0px;
+	padding: 0px;
+}
+
+a img {
+	border: 0px;
+}
+
+#vt_page {
+	width: 1000px;
+	margin: auto;
+}
+
+#vt_header {
+	width: 1000px;
+	height: 276px;
+	float: left;
+	background: url('images/ntoabs.png') no-repeat;
+}
+
+#vt_container {
+	width: 1000px;
+	float: left;
+	background: url('images/contentmid.png') repeat-y;
+}
+
+/**
+ * Footer Style Definitions
+ */
+#vt_footer {
+	width: 1000px;
+	padding: 20px 0px 10px 0px;
+	float: left;
+	background: url('images/contentbot.png') repeat-y;
+	color: #000000;
+}
+
+#vt_footer .column {
+	float: left;
+}
+
+#vt_footer .first {
+	width: 180px;
+}
+
+#vt_footer .second {
+	width: 575px;
+	text-align: center;
+}
+
+#vt_footer .third {
+	width: 245px;
+}
+
+/**
+ * Menu Style Definitions
+ */
+#vt_menu {
+	width: 180px;
+	float: left;
+	background: url('images/menubackground.png') top no-repeat;
+	padding-top: 50px;
+}
+
+#vt_menu .header {
+	width: 145px;
+	height: 36px;
+	background: url('images/inicio.png') no-repeat;
+	color: #000000;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	padding: 10px 0px 0px 20px;
+	margin: 0px 5px 0px 10px;
+	
+}
+
+#vt_menu .serv {
+	width: 145px;
+	height: 36px;
+	background: url('images/servidor.png') no-repeat;
+	color: #000000;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	padding: 10px 0px 0px 20px;
+	margin: 0px 5px 0px 10px;
+	
+}
+
+#vt_menu .comu {
+	width: 145px;
+	height: 36px;
+	background: url('images/comu.png') no-repeat;
+	color: #000000;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	padding: 10px 0px 0px 20px;
+	margin: 0px 5px 0px 10px;
+	
+}
+
+#vt_menu .info {
+	width: 145px;
+	height: 36px;
+	background: url('images/infos.png') no-repeat;
+	color: #000000;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	padding: 10px 0px 0px 20px;
+	margin: 0px 5px 0px 10px;
+	
+}
+
+#vt_menu ul {
+	width: 165px;
+	margin: 5px 5px 5px 10px;
+	padding: 0px;
+	list-style: none;
+}
+
+#vt_menu li {
+	padding: 5px;
+	background: url('images/menuarrow.png') right center no-repeat;
+}
+
+#vt_menu a {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#vt_menu a:hover {
+	color: #bedae7;
+}
+
+/**
+ * Content Style Definitions
+ */
+#vt_content {
+	width: 535px;
+	padding: 8px 20px 7px 20px;
+	float: left;
+	color: black;
+}
+
+#vt_content .message .title, #vt_content .news .newsTitle {
+	width: 485px;
+	height: 33px;
+	padding: 15px 10px 0px 200px;
+	background: url('images/contentheader.png') no-repeat;
+	color: black;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	border: 0px;
+}
+
+#vt_content .header .left {
+	width: 485px;
+	position: absolute;
+	text-align: right;
+}
+
+#vt_content a { 
+	color: black
+}
+
+#vt_content a:hover {
+	text-decoration: none;
+}
+
+#vt_content input {
+	background: #f1e4d6;
+	border: 1px solid #bea282;
+	color: #896840;
+	padding: 3px;
+	margin: 2px;
+}
+
+#vt_content textarea {
+	background: #f1e4d6;
+	border: 1px solid #bea282;
+	color: #896840;
+	padding: 3px;
+	margin: 2px;
+}
+
+#vt_content select {
+	background: #f1e4d6;
+	border: 1px solid #bea282;
+	color: #896840;
+	padding: 3px;
+	margin: 2px;
+}
+
+#vt_content .comment {
+	background: #fdefe4;
+	border: 1px solid #f2dece;
+}
+
+#vt_content .commentBody {
+	border-bottom: 1px dotted #f2dece;
+}
+
+#vt_content .bar {
+	background: #fdefe4;
+	border: 1px solid #f2dece;
+	padding: 5px;
+}
+
+#vt_content .messageAdd {
+	margin-top: -1px;
+	background: #fdefe4;
+	border-left: 1px solid #f2dece;
+	border-right: 1px solid #f2dece;
+	border-bottom: 1px solid #f2dece;
+	padding: 5px;
+}
+
+/**
+ * Panel Style Definitions
+ */
+#vt_panel {
+	width: 245px;
+	float: left;
+	background: url('images/panelmid.png') repeat-y;
+	color: #56422e;
+}
+
+#vt_panel .top {
+	width: 245px;
+	float: left;
+	background: url('images/paneltop.png') top no-repeat;
+}
+
+#vt_panel .bot {
+	width: 217px;
+	float: left;
+	padding: 10px 4px 10px 4px;
+	background: url('images/panelbot.png') bottom no-repeat;
+}
+
+#vt_panel .button1 {
+	display: block;
+	width: 207px;
+	height: 53px;
+	padding: 14px 0px 0px 10px;
+	background: url('images/panelbutton.png') no-repeat;
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+#vt_panel .button1 span {
+	font-size: 12px;
+	display: block;
+	font-weight: bold;
+	text-transform: none;
+}
+
+#vt_panel .button1:hover {
+	background: url('images/panelbuttonhover.png') no-repeat;
+	color: black;
+}
+
+#vt_panel .button2 {
+	display: block;
+	width: 207px;
+	height: 53px;
+	padding: 14px 0px 0px 10px;
+	background: url('images/panelbutton1.png') no-repeat;
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+#vt_panel .button2 span {
+	font-size: 12px;
+	display: block;
+	font-weight: bold;
+	text-transform: none;
+}
+
+#vt_panel .button2:hover {
+	background: url('images/panelbuttonhover1.png') no-repeat;
+	color: black;
+}
+
+#vt_panel .button {
+	display: block;
+	width: 207px;
+	height: 53px;
+	padding: 14px 0px 0px 10px;
+	background: url('images/panelbutton2.png') no-repeat;
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+#vt_panel .button span {
+	font-size: 12px;
+	display: block;
+	font-weight: bold;
+	text-transform: none;
+}
+
+#vt_panel .button:hover {
+	background: url('images/panelbuttonhover2.png') no-repeat;
+	color: black;
+}
+
+
+.vt_panel_module {
+	width: 198px;
+	padding: 0px 8px 5px 9px;
+}
+
+.vt_panel_module .header {
+	width: 178px;
+	height: 21px;
+	padding: 13px 10px 10px 10px;
+	margin-bottom: 5px;
+	background: url('images/panelheader.png') no-repeat;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+}
+
+.vt_panel_module a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.vt_panel_module a:hover {
+	color: #56422e;
+}

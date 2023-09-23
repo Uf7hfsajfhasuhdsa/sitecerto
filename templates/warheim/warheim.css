@@ -1,0 +1,592 @@
+body  {
+    background-attachment: fixed;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-position: 0% 0%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: 100% 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #dfb451;
+    text-shadow: #3d2e05 0.2em 0.2em 0.4em;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.thrColElsHdr #container {
+	width: 1000px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left;
+} 
+.thrColElsHdr #header {
+	width: 982px;
+	height: 202px;
+	padding: 0 10px;
+	background: url(images/header.png);
+	background-repeat: no-repeat;
+} 
+#navhome {
+	float:left;
+	width: 36px;
+	height: 15px;
+	position: relative;
+	top: 83px;
+	left: 32px;
+}
+#navaccount {
+	float:left;
+	width: 54px;
+	height: 14px;
+	position: relative;
+	top: 83px; 
+	left: 308px;
+}
+#navnews {
+	float:left;
+	width: 35px;
+	height: 12px;
+	position: relative;
+	top: 83px;
+	left: 90px;
+}
+#navguilds {
+	float:left;
+	width: 40px;
+	height: 17px;
+	position: relative;
+	top: 83px;
+	left: -34px;
+}
+#navforum {
+	float:left;
+	width: 42px;
+	height: 17px;
+	position: relative;
+	left: 238px;
+	top: 83px;
+}
+#navshop {
+	float:left;
+	width: 32px;
+	height: 18px;
+	position: relative;
+	left: 285px;
+	top: 83px;
+}
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".thrColElsHdr #sidebar1 p" rule.
+*/
+.thrColElsHdr #sidebar1 {
+	float: left;
+	width: 213px;
+	height: 951px;
+	background: url(images/sidebar1.png);
+	position: relative;
+	top: 181px;
+}
+.thrColElsHdr #sidebar11 {
+	float: left;
+	width: 219px;
+	height: 266px;
+	background: url(images/sidebarlogin.png);
+	position: relative;
+	top: 0px;
+}
+.thrColElsHdr #sidebar12 {
+	width: 176px;
+	height: 150px;
+	position: relative;
+	top: -50px;
+	left: 30px;
+}
+.thrColElsHdr #sidebar13 {
+	float: left;
+	width: 143px;
+	height: 98px;
+	background: url(images/chain1.png) no-repeat;
+	position: relative;
+	bottom: 67px;
+	left: 43px;
+}
+#loginsign {
+float: left;
+position: relative;
+left: 12px;
+}
+#sidebar14 {
+	float: left;
+	width: 143px;
+	position: relative;
+	bottom: -50px;
+	left: 60px;
+}
+.thrColElsHdr #sidebar2 {
+	float: right;
+	width: 213px;
+	height: 651px;
+	background: url(images/sidebar2.png) repeat-y;
+	position: relative;
+	bottom: 21px;
+	left: 0px;
+}
+
+.thrColElsHdr #sidebari2 {
+	float: right;
+	width: 206px;
+	height: 37px;
+	background: url(images/menugallery.png) no-repeat;
+	position: relative;
+	bottom: 21px;
+	left: -782px;
+	top: -955px;
+}
+
+.thrColElsHdr #sidebar22 {
+	float: right;
+	width: 216px;
+	height: 377px;
+	background: url(images/sidebarhigh.png);
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: -65px;
+}
+#top10 {
+	float: right;
+	width: 218px;
+	height: 37px;
+	background: url(images/top10.png);
+	background-repeat: no-repeat;
+	position: relative;
+	right: 3px;
+	top: 180px;
+}
+.thrColElsHdr #sidebar221 {
+	float: right;
+	width: 216px;
+	height: 250px;
+	position: relative;
+	top: 50px;
+	left: 5px;
+	font-size: 12px;
+	color: yellow;
+}
+.inputsearch {
+	width: 127px;
+	height: 20px;
+	background: url(images/searchbox.png);
+	background-position: right;
+	border: 0px;
+	color: #5c4d20;
+}
+.searchbutton {
+	width: 69px;
+	height: 17px;
+	background: url(images/searchbutton.png);
+	background-position: right;
+	border: 0px;
+	position: relative;
+	bottom: 7px;
+}
+.thrColElsHdr #sidebar23 {
+	float: left;
+	width: 216px;
+	height: 377px;
+	position: relative;
+	bottom: 150px;
+	top: -348px;
+	left: -8px;
+}
+.thrColElsHdr #sidebar24 {
+	float: left;
+	width: 216px;
+	height: 377px;
+	position: relative;
+	bottom: 32px;
+	top: 0px;
+	left: -10px;
+}
+
+.thrColElsHdr #sidebara2 {
+	float: left;
+	width: 216px;
+	height: 377px;
+	position: relative;
+	bottom: 32px;
+	top: -630px;
+	left: -793px; 
+}
+
+.thrColElsHdr #sidebara3 {
+	float: left;
+	width: 216px;
+	height: 377px;
+	position: relative;
+	bottom: 32px;
+	top: -1026px;
+	left: -793px; 
+}
+
+.thrColElsHdr #sidebari3 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -950px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari4 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -945px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari5 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -901px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari6 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -895px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari7 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -1266px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebara4 {
+	float: left;
+	width: 216px;
+	height: 377px;
+	position: relative;
+	bottom: 32px;
+	top: -1275px;
+	left: -793px; 
+}
+
+.thrColElsHdr #sidebari8 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -1602px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari9 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -1597px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari10 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -1592px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari11 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -1587px;
+	left: -775px; 
+}
+
+.thrColElsHdr #sidebari12 {
+	float: left;
+	width: 200px;
+	height: 37px;
+	position: relative;
+	bottom: 32px;
+	top: -1582px;
+	left: -775px; 
+}
+.thrColElsHdr #sidebar1 h3, .thrColElsHdr #sidebar1 p, .thrColElsHdr #sidebar2 p, .thrColElsHdr #sidebar2 h3 {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.thrColElsHdr #mainContent {
+float: left;
+	width: 564px;
+	position: relative;
+	left: 6px;
+	bottom: 0px;
+	background-image: url(images/contentbot.png);
+	background-repeat: repeat-y;
+	font-family: Tahoma;
+	font-size: 11px;
+} 
+.thrColElsHdr #footermain {
+	width: 564px;
+	height: 189px;
+	background-image: url(images/footer.png);
+	overflow: hidden;
+	margin-left: 219px;
+}
+#loginimage {
+float: left;
+	background-image: url(images/loginpaneltitle.png);
+	background-repeat: no-repeat;
+	width: 111px;
+	height: 19px;
+	position: relative;
+	left: 40px;
+}
+.thrColElsHdr #mainContent2 {
+float: left;
+	width: 520px;
+	position: relative;
+	left: 23px;
+} 
+.thrColElsHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+} 
+.thrColElsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.inputlogin {
+	width: 100px;
+	height: 30px;
+	color: white;
+	font-size: 12px;
+	background: url(images/loginbox1.png) no-repeat;
+	background-position: center;
+	border: 0px;
+	padding: 0 15px;
+	position: relative;
+	right: 50px;
+	text-align: center;
+	top: 25px;
+}
+.inputlogin2 {
+	width: 100px;
+	height: 30px;
+	color: white;
+	font-size: 12px;
+	background: url(images/loginbox2.png) no-repeat;
+	background-position: center;
+	border: 0px;
+	padding: 0 15px;
+	position: relative;
+	right: -60px;
+	top: -10px;
+	text-align: center;
+	font: bold;
+}
+#loginforgot {
+	float: left;
+	position: relative;
+}
+.login {
+	width: 82px;
+	height: 28px;
+	background: url(images/loginbutton.png) no-repeat;
+	background-position: right;
+	border: 0px;
+	top: 560px;
+
+}
+.style1 a:link {
+	color: #5c4d20;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.style1 a:visited {
+	color: #5c4d20;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.style1 a:hover {
+	color: #6e5e2f;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.style1 a:active {
+	color: #5c4d20;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.stylefooter {
+font-family: Tahoma;
+color: #80715b;
+font-size: 11px;
+margin: auto;
+margin-top:35px;
+}
+.stylefooter a:link {
+	color: #80715b;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.stylefooter a:visited {
+	color: #ab9b84;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.stylefooter a:hover {
+	color: #ab9b84;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.stylefooter a:active {
+	color: #ab9b84;
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+#sidebar221 a:link {
+	font-family: Tahoma;
+	text-decoration: underline;
+	font-size: 12px;
+	color: #5c4d20;
+}
+#sidebar221 a:visited {
+	font-family: Tahoma;
+	text-decoration: underline;
+	font-size: 12px;
+	color: #5c4d20;
+}
+#sidebar221 a:hover {
+	font-family: Tahoma;
+	text-decoration: underline;
+	font-size: 12px;
+	color: #6e5e2f;
+}
+#sidebar221 a:active {
+	font-family: Tahoma;
+	text-decoration: underline;
+	font-size: 12px;
+	color: #6e5e2f;
+}
+.stylemain {
+font-family: Tahoma;
+color: #000000;
+font-size: 12px;
+	text-shadow: #8d7046 1px 1px, 0px 0px;
+}
+.stylemain a:link{
+font-family: Tahoma;
+color: #000000;
+font-size: 12px;
+	text-shadow: #8d7046 1px 1px, 0px 0px;
+	text-decoration: underline;
+}
+.stylemain a:visited{
+font-family: Tahoma;
+color: #000000;
+font-size: 12px;
+	text-shadow: #8d7046 1px 1px, 0px 0px;
+	text-decoration: underline;
+}
+.stylemain a:hover{
+font-family: Tahoma;
+color: #191919;
+font-size: 12px;
+	text-shadow: #8d7046 1px 1px, 0px 0px;
+	text-decoration: underline;
+}
+.stylemain a:active {
+font-family: Tahoma;
+color: #000000;
+font-size: 12px;
+	text-shadow: #8d7046 1px 1px, 0px 0px;
+	text-decoration: underline;
+}
+.stylestatus {
+font-family: Tahoma;
+color: #655235;
+font-size: 12px;
+}
+.stylestatus2 {
+font-family: Tahoma;
+color: #44341d;
+font-size: 12px;
+}
+#vt_content .message .title, #vt_content .news .newsTitle {
+width: 497;
+height: 36;
+    padding: 8px 10px 10px 15px;
+    margin: 2px;
+    color: white;
+    font-family: Arial Black;
+    font-size: 15px;
+    background: url(images/linemain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: bold;
+    border: 0px;
+
+}

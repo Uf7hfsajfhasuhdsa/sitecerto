@@ -1,0 +1,22 @@
+-> 28/02/2021 Update 1.9 <-
+Servidor Resetado
+Cliente Mobile esta pronto.
+Novo Launcher.
+Exp reduzida em 5%.
+Todos os personagens teve os combos reformulados.
+Novas sprites adicionadas.
+Novos monstros.
+Money foi rigorosamente valorizado.
+Mapa esta sofrendo alteracoes.
+Novos personagens: Tsunade (VIP) / Konan (FREE).
+Novos items.
+Novos npc's para trade.
+Novo sistema de Vilarejo.
+Shino: 2 Jutsu novo 300/400
+Ajustado alguns bugs.
+Ajustado o big regeneration.
+Remake nas tasks/missoes.
+Npc's foi devidamente ajustado com o valor correto.
+
+
+
